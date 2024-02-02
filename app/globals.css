@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: lightgray;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+    aspect-ratio: 1;
+    outline: solid black;
+    position: relative;
+    z-index: 1;
+}
+.grid-item {
+    outline: none;
+    width: 100%;
+    height: 100%;
+    padding: 10px; /* Adjust padding as needed for vertical centering */
+    text-align: center; /* Centers the cursor horizontally */
+    font-size: 20px; /* Adjust font size as needed */
+    font-weight: bold; /* Makes the text bold */
+}
+.grid-small-border {
+    outline: solid lightgray;
+}
+
+@media (max-width: 600px) {
+    .grid-container {
+        max-width: 100%;
+    }
+}
