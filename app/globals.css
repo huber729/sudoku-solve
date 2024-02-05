@@ -29,6 +29,20 @@ body {
     transition-duration: 0.4s;
 }
 
+.disabled-button {
+    background-color: gray; 
+    color: white;             
+    padding: 10px 20px;       
+    border: none;             
+    border-radius: 5px;      
+    text-align: center;       
+    text-decoration: none;    
+    display: inline-block;    
+    font-size: 16px;          
+    margin: 4px 2rem;                  
+    transition-duration: 0.4s;
+}
+
 .center {
     text-align: center;
     padding: .5rem;
@@ -51,6 +65,21 @@ body {
     position: relative;
     z-index: 1;
 }
+
+.grid-container-highlight-red {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+    aspect-ratio: 1;
+    outline: solid black;
+    position: relative;
+    z-index: 1;
+    background:red;
+}
+
 .grid-item {
     outline: none;
     width: 100%;
